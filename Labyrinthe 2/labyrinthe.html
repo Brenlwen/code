@@ -1,0 +1,68 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+
+            <a-assets>
+                <img id="texture" src= "labyrinthe_texture.jpeg">
+            </a-assets>
+
+      <a-box position="-5.960 2.750 -5.260" rotation="0 0 0"  color="#424242" scale="0.080 5.590 9.510" src="labyrinthe_texture.jpeg"></a-box>
+      <a-box position="0.000 2.750 -9.980" rotation="0 90 0" color="#424242" scale="0.080 5.590 11.950" src="labyrinthe_texture.jpeg"></a-box>
+      <a-box position="5.980 2.750 -3.280" rotation="0 0 0" color="#424242" scale="0.080 5.590 10.560" src="labyrinthe_texture.jpeg"></a-box>
+      <a-box position="0.000 2.750 1.970" rotation="0 90 0" color="#424242" scale="0.080 5.590 11.950" src="labyrinthe_texture.jpeg"></a-box>
+
+      <a-box position="-3.490 2.750 -0.483" rotation="0 90 0" color="#424242" scale="0.080 5.590 4.980" src="labyrinthe_texture.jpeg"></a-box>
+      <a-box position="-0.997 2.750 -1.726" rotation="0 0 0" color="#424242" scale="0.080 5.590 2.550" src="labyrinthe_texture.jpeg"></a-box>
+      <a-box position="1.486 2.750 -0.575" rotation="0 0 0" color="#424242" scale="0.080 5.590 4.980" src="labyrinthe_texture.jpeg"></a-box>
+      <a-box position="2.596 2.750 -3.020" rotation="0 90 0" color="#424242" scale="0.080 5.590 2.230" src="labyrinthe_texture.jpeg"></a-box>
+      <a-box position="3.742 2.750 -1.459" rotation="0 0 0" color="#424242" scale="0.080 5.590 3.040" src="labyrinthe_texture.jpeg"></a-box>
+      <a-box position="-2.404 2.750 -2.990" rotation="0 90 0" color="#424242" scale="0.080 5.590 2.810" src="labyrinthe_texture.jpeg"></a-box>
+      <a-box position="-3.788 2.750 -4.429" rotation="0 0 0" color="#424242" scale="0.080 5.590 2.960" src="labyrinthe_texture.jpeg"></a-box>
+      <a-box position="2.262 2.750 -5.009" rotation="0 90 0" color="#424242" scale="0.080 5.590 7.440" src="labyrinthe_texture.jpeg"></a-box>
+      <a-box position="-1.478 2.750 -6.559" rotation="0 0 0" color="#424242" scale="0.080 5.590 3.140" src="labyrinthe_texture.jpeg"></a-box>
+      <a-box position="-2.748 2.750 -8.019" rotation="0 90 0" color="#424242" scale="0.080 5.590 2.500" src="labyrinthe_texture.jpeg"></a-box>
+      <a-box position="0.712 2.750 -8.479" rotation="0 0 0" color="#424242" scale="0.080 5.590 2.950" src="labyrinthe_texture.jpeg"></a-box>
+      <a-box position="3.232 2.750 -7.039" rotation="0 90 0" color="#424242" scale="0.080 5.590 1.870" src="labyrinthe_texture.jpeg"></a-box>
+      <a-box position="4.152 2.750 -7.749" rotation="0 0 0" color="#424242" scale="0.080 5.590 1.480" src="labyrinthe_texture.jpeg"></a-box>
+      <a-box position="5.062 2.750 -8.509" rotation="0 90 0" color="#424242" scale="0.080 5.590 -1.860" src="labyrinthe_texture.jpeg"></a-box>
+      <a-box position="2.252 2.750 -7.769" rotation="0 0 0" color="#424242" scale="0.080 5.590 1.540" src="labyrinthe_texture.jpeg"></a-box>
+
+      <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" scale="3 3 1" src="texture_pierree.jpeg"></a-plane>
+      <a-sky color="#ECECEC" src="texture_ciel.jpeg"></a-sky>
+    </a-scene>
+  <!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function() {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					head.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					head.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function(msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			console.log('Live reload enabled.');
+		})();
+	}
+	// ]]>
+</script>
+</body>
+</html>
